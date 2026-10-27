@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "blockvoid",
+  "version": "${version}",
+  "name": "Block Void",
+  "description": "Pick up a block and that block is erased from the world forever. Every one of them, everywhere. The world slowly disappears as you play.",
+  "authors": [
+    "Block Void"
+  ],
+  "license": "MIT",
+  "icon": "assets/blockvoid/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.blockvoid.BlockVoidMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
