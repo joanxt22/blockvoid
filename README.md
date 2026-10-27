@@ -21,24 +21,6 @@ and in every chunk that loads or generates from then on. The mod tells everyone 
 
 Put `blockvoid-1.0.0.jar` and the Fabric API jar into your `.minecraft/mods` folder.
 
-## How to BUILD the .jar
-
-**Option A, nothing to install (GitHub):**
-1. Make a free GitHub repository and upload everything in this folder (including the hidden `.github` folder).
-2. Open the **Actions** tab, wait for **Build mod jar** to go green, open the run and download the `blockvoid-jar` artifact.
-3. Unzip it. `blockvoid-1.0.0.jar` is your mod.
-
-**Option B, on your own PC:**
-1. Install JDK 25 (e.g. Eclipse Temurin 25) and Gradle 9.7 or newer.
-2. In this folder run: `gradle build`
-3. Your jar is at `build/libs/blockvoid-1.0.0.jar`.
-
-## Tweaking
-
-Everything adjustable is at the top of `src/main/java/com/blockvoid/Eraser.java`:
-`SCAN_RADIUS` (how many chunks around each player are cleaned), `ROLLING_CHUNKS_PER_TICK` and
-`TIME_BUDGET_NANOS` (how fast erasing happens vs. how much lag it may cause).
-
 ## How "picking up" is detected
 
 Each tick the mod compares each player's inventory with the previous tick. If the count of a block item went up
